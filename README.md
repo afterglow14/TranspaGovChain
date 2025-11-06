@@ -1,11 +1,11 @@
-# 🧱 TranspaGovChain  
+# TranspaGovChain  
 ### *Transparency in Every Block*
 
 > A **Polkadot-powered blockchain platform** that ensures transparency, accountability, and citizen participation in government projects.
 
 ---
 
-## 🌐 Overview
+## Overview
 
 **TranspaGovChain** is a decentralized application designed to promote **open governance** and **public transparency** for infrastructure projects such as **flood control**, **roads**, and **public works**.
 
@@ -13,7 +13,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## ⚙️ Key Features
+## Key Features
 
 ✅ **Blockchain Transparency** – All project data is stored immutably on the Polkadot blockchain.  
 ✅ **Smart Contract Automation** – Project registration, funding, and auditing are handled through secure smart contracts.  
@@ -23,7 +23,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## 🧩 Architecture Overview
+## Architecture Overview
 
 **Core Layers:**
 - **Government Agencies Layer** – Project creation and fund allocation  
@@ -35,7 +35,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## 💠 Tokenomics
+## Tokenomics
 
 | Attribute | Details |
 |------------|----------|
@@ -53,7 +53,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -67,7 +67,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## 🚀 Roadmap
+## Roadmap
 
 | Phase | Timeline | Description |
 |-------|-----------|-------------|
@@ -80,7 +80,7 @@ By leveraging **blockchain technology**, TranspaGovChain allows citizens, audito
 
 ---
 
-## 🧠 Vision
+## Vision
 
 To build a **corruption-free, blockchain-empowered governance ecosystem** where citizens can trust that every public project is **transparent, verifiable, and accountable**.
 
@@ -88,7 +88,7 @@ To build a **corruption-free, blockchain-empowered governance ecosystem** where 
 
 ---
 
-## 🧑‍💼 Team & Contributions
+## Team & Contributions
 
 TranspaGovChain is developed by a dedicated team of blockchain innovators, civic technology advocates, and open-data researchers.  
 We welcome **contributors**, **developers**, and **partners** who share our vision of transparent governance.
