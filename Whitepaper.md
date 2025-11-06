@@ -12,20 +12,6 @@ In the modern digital era, transparency and accountability are vital pillars of 
 
 **TranspaGovChain** was developed to address this issue by providing a **tamper-proof, decentralized ledger** for government project management and monitoring. Built on **Polkadot**, it ensures **interoperability**, **high throughput**, and **security**, while offering user-friendly interfaces for **citizens, contractors, and government agencies** alike.
 
-### 1.1 Problem Statement
-
-- Lack of transparency in project procurement and fund utilization  
-- Limited access to reliable project data for citizens and watchdog agencies  
-- Inefficient reporting systems vulnerable to manipulation  
-- Fragmented data silos between government departments  
-
-### 1.2 Objectives
-
-- Enable real-time, blockchain-based tracking of government projects  
-- Ensure immutability and verifiability of public expenditure records  
-- Foster citizen engagement through open data and trustless verification  
-- Support inter-agency collaboration via secure smart contracts  
-
 ---
 
 ## 2. System Overview
@@ -48,17 +34,17 @@ Below is a **Mermaid diagram** illustrating the high-level architecture of Trans
 
 ```mermaid
 graph TD
-    A[Government Agencies] -->|Register & Fund Projects| B[Smart Contracts]
-    B --> C[Polkadot Blockchain]
-    C --> D[Audit & Verification Layer]
-    D --> E[Transparency Dashboard]
-    E --> F[Citizen Portal]
-    F -->|Feedback & Reports| D
-    C --> G[Data Storage & Interoperability Layer]
-    G -->|APIs & Cross-Chain Bridges| H[Third-Party Transparency Tools]
-    H --> I[Auditors, NGOs, and Researchers]
-    C --> J[Governance & Token Layer]
-    J -->|Voting, Staking, Rewards| A
+    GOV[Government Agencies] --> SC[Smart Contracts]
+    SC --> BC[Polkadot Blockchain]
+    BC --> AUD[Audit and Verification Layer]
+    AUD --> DASH[Transparency Dashboard]
+    DASH --> CIT[Citizen Portal]
+    CIT --> FB[Feedback Reports]
+    BC --> DATA[Data Interoperability Layer]
+    DATA --> TOOLS[3rd-Party Transparency Tools]
+    TOOLS --> AUDITORS[Auditors, NGOs, Researchers]
+    BC --> GOVLAYER[Governance and Token Layer]
+    GOVLAYER --> GOV
 
 3.1 Data Architecture
 
@@ -101,16 +87,6 @@ Audit Verification – Auditors hash and verify completion data
 
 Citizen Feedback Loop – Decentralized trust scoring
 
-4.3 Front-End Integration
-
-Framework: React + TypeScript
-
-Blockchain Access: Polkadot.js API
-
-Visualization: Real-time charts and blockchain event feeds
-
-Authentication: KYC + Web3 wallet login
-
 5. Tokenomics
 5.1 Token Overview
 
@@ -126,32 +102,13 @@ Decimals	18
 Smart Contract	TBD (Deployed on Polkadot Mainnet)
 5.2 Token Utility
 
-Governance Voting: Token holders can vote on project verification policies, upgrades, and transparency standards.
+Governance Voting: Token holders can vote on policies, upgrades, and transparency standards.
 
 Staking Rewards: Validators and auditors stake TGC to secure the network and earn incentives.
 
-Reputation Scoring: Contractors and agencies earn or lose TGC-based reputation scores based on project performance.
+Reputation Scoring: Contractors and agencies earn or lose TGC-based scores based on performance.
 
-Access & API Credits: Third-party platforms use TGC for data query access or report generation.
-
-5.3 Token Distribution
-Category	Allocation	Description
-Public Sale	30%	Initial token offering for early adopters and developers
-Governance Treasury	20%	On-chain governance, ecosystem grants
-Development Fund	20%	Platform upgrades and R&D
-Staking & Rewards	20%	Incentives for validators and auditors
-Team & Advisors	10%	Long-term project contributors
-5.4 Governance Model
-
-TranspaGovChain employs a DAO (Decentralized Autonomous Organization) model for decision-making.
-
-Proposal Submission: Any token holder can propose system changes.
-
-Voting Process: Weighted voting based on staked TGC.
-
-Execution Layer: Approved proposals trigger smart contract actions on-chain.
-
-Transparency Reports: Publicly viewable logs of all governance outcomes.
+Access & API Credits: Third-party platforms use TGC for verified data access.
 
 6. Security and Privacy
 
@@ -175,29 +132,31 @@ Phase 3	Q2 2026	Integration with government APIs and auditing agencies
 Phase 4	Q3 2026	Launch of citizen transparency dashboard and feedback system
 Phase 5	Q4 2026	Polkadot mainnet deployment, DAO launch, and token distribution
 Phase 6	2027+	Expansion to other governance sectors and international adoption
-8. Future Enhancements
 
-AI-driven anomaly detection for corruption risk indicators
+gantt
+    dateFormat  YYYY-MM-DD
+    title TranspaGovChain Development Roadmap
+    section Foundation
+    Concept & UI Prototype :done, a1, 2025-10-01, 2025-12-31
+    section Smart Contracts
+    Contract Deployment & Testing :a2, 2026-01-01, 2026-03-31
+    section Integration
+    Government API Integration :a3, 2026-04-01, 2026-06-30
+    section Public Access
+    Citizen Dashboard Launch :a4, 2026-07-01, 2026-09-30
+    section Governance
+    Mainnet & DAO Deployment :a5, 2026-10-01, 2026-12-31
+    section Expansion
+    Multi-Sector Integration :a6, 2027-01-01, 2027-12-31
 
-IoT sensor integration for real-time infrastructure data (e.g., water levels, traffic flow)
-
-Cross-chain collaboration with other public transparency networks
-
-Mobile app for citizen reporting and QR-based project verification
-
-9. Conclusion
+8. Conclusion
 
 TranspaGovChain represents a paradigm shift in how public transparency and trust are built.
 By combining the immutability of blockchain, the interoperability of Polkadot, and the participation of citizens, it redefines public accountability.
 
 Through TGC-powered governance and open data, we pave the way toward a transparent, corruption-resistant, and citizen-centric digital government.
 
-10. Acknowledgments
-
-Developed by the TranspaGovChain Project Team.
-Special thanks to civic technology communities, open-data advocates, and blockchain researchers who share the vision of transparent governance.
-
-11. License
+9. License
 
 This project is released under the MIT License.
 See the LICENSE
@@ -211,3 +170,5 @@ Blockchain Network: Polkadot
 Email: contact@transpagovchain.org
 
 GitHub: https://github.com/transpagovchain
+
+TranspaGovChain — Transparency in Every Block.
