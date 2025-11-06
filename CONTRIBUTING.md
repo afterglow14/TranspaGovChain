@@ -121,7 +121,7 @@ If you have questions or want to discuss your ideas:
 
 Open a GitHub Discussion or Issue
 
-Email us at contact@transpagovchain.org
+Email us at contact@transpagovchain.org (coming soon!)
 
 ### Thank You
 
