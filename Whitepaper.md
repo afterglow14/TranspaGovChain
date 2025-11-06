@@ -30,145 +30,151 @@ TranspaGovChain is a **decentralized application (dApp)** that connects **govern
 
 ## 3. System Architecture
 
-Below is a **Mermaid diagram** illustrating the high-level architecture of TranspaGovChain:
+### 3.1 Overview
 
-```mermaid
-graph TD
-    GOV[Government Agencies] --> SC[Smart Contracts]
-    SC --> BC[Polkadot Blockchain]
-    BC --> AUD[Audit and Verification Layer]
-    AUD --> DASH[Transparency Dashboard]
-    DASH --> CIT[Citizen Portal]
-    CIT --> FB[Feedback Reports]
-    BC --> DATA[Data Interoperability Layer]
-    DATA --> TOOLS[3rd-Party Transparency Tools]
-    TOOLS --> AUDITORS[Auditors, NGOs, Researchers]
-    BC --> GOVLAYER[Governance and Token Layer]
-    GOVLAYER --> GOV
+The architecture of **TranspaGovChain** consists of several interconnected layers that ensure seamless communication and transparency across stakeholders:
 
-3.1 Data Architecture
+1. **Government Agencies Layer** — Agencies register projects and initiate funding requests.  
+2. **Smart Contract Layer** — Handles all business logic including registration, fund disbursement, and milestone tracking.  
+3. **Blockchain Core Layer (Polkadot)** — Ensures immutability, security, and decentralized data recording.  
+4. **Audit & Verification Layer** — Auditors validate and certify project progress and completion.  
+5. **Transparency Dashboard** — A public interface that displays project data for citizens and oversight bodies.  
+6. **Citizen Portal** — Allows citizens to view verified information, report discrepancies, and provide feedback.  
+7. **Governance & Token Layer** — Powers the decentralized governance system using the TGC token for voting and staking.  
+8. **Data Interoperability Layer** — Connects with external APIs, open data systems, and third-party transparency tools.  
 
-Each project is represented as a unique blockchain asset containing:
+### 3.2 Data Architecture
 
-Project Metadata (title, location, category)
+Each government project is stored as a **unique blockchain asset** containing:
+- Project metadata (title, location, category)
+- Proponent and contractor identities
+- Budget allocation and expenditure logs
+- Audit and verification records
+- Citizen feedback and trust scores  
 
-Proponent and Contractor IDs
+All project data is hashed and stored on-chain, guaranteeing **immutability** and **verifiability**.
 
-Budget Allocation & Milestone Logs
+---
 
-Audit and Verification Hashes
+## 4. Technical Framework
 
-Citizen Feedback Records
+### 4.1 Blockchain Framework: Polkadot
 
-All records are hashed and stored on-chain, ensuring immutability and public verifiability.
+TranspaGovChain is powered by **Polkadot**, chosen for its:
+- **Cross-chain interoperability**
+- **Shared security model** through parachains and relay chains  
+- **Substrate-based smart contract runtime**
+- **Nominated Proof-of-Stake (NPoS)** consensus  
 
-4. Technical Framework
-4.1 Blockchain Framework: Polkadot
-
-TranspaGovChain is powered by Polkadot, chosen for its:
-
-Cross-chain interoperability
-
-Shared security model via relay chains and parachains
-
-Substrate-based smart contract runtime
-
-Nominated Proof-of-Stake (NPoS) consensus
-
-4.2 Smart Contract Logic
+### 4.2 Smart Contract Logic
 
 Smart contracts handle:
+- **Project Registration** – Government agencies initiate verified projects  
+- **Funding & Disbursement** – Conditional fund release based on milestone completion  
+- **Audit Verification** – Auditors record validation hashes confirming completion  
+- **Citizen Feedback** – Users provide feedback linked to project identifiers  
 
-Project Registration – Government agencies initiate verified projects
+### 4.3 Front-End Integration
 
-Funding & Disbursement – Conditional fund release upon milestone completion
+- **Framework:** React + TypeScript  
+- **Blockchain Access:** Polkadot.js API  
+- **Visualization:** Real-time charts and event feeds  
+- **Authentication:** KYC + Web3 wallet integration  
 
-Audit Verification – Auditors hash and verify completion data
+---
 
-Citizen Feedback Loop – Decentralized trust scoring
+## 5. Tokenomics
 
-5. Tokenomics
-5.1 Token Overview
+### 5.1 Token Overview
 
-The TGC Token is the native digital asset of TranspaGovChain.
-It underpins governance, staking, and incentivization within the network.
+The **TGC Token** is the native digital asset of TranspaGovChain.  
+It underpins governance, staking, and incentivization within the ecosystem.
 
-Attribute	Description
-Token Symbol	TGC
-Blockchain	Polkadot
-Type	Utility + Governance Token
-Total Supply	100,000,000 TGC
-Decimals	18
-Smart Contract	TBD (Deployed on Polkadot Mainnet)
-5.2 Token Utility
+| Attribute | Description |
+|------------|-------------|
+| **Token Symbol** | `TGC` |
+| **Blockchain** | Polkadot |
+| **Type** | Utility + Governance Token |
+| **Total Supply** | 100,000,000 TGC |
+| **Decimals** | 18 |
+| **Smart Contract** | TBD (Polkadot Mainnet) |
 
-Governance Voting: Token holders can vote on policies, upgrades, and transparency standards.
+### 5.2 Token Utility
 
-Staking Rewards: Validators and auditors stake TGC to secure the network and earn incentives.
+- **Governance Voting:** Token holders vote on system policies and platform improvements.  
+- **Staking Rewards:** Validators and auditors earn rewards by securing the network.  
+- **Reputation Scoring:** Contractors and agencies build or lose reputation based on project outcomes.  
+- **Access Credits:** Third-party apps use TGC for API and data access.  
 
-Reputation Scoring: Contractors and agencies earn or lose TGC-based scores based on performance.
+### 5.3 Governance Model
 
-Access & API Credits: Third-party platforms use TGC for verified data access.
+The TranspaGovChain governance system operates as a **Decentralized Autonomous Organization (DAO)**:
+1. Token holders submit proposals.  
+2. The community votes using weighted TGC holdings.  
+3. Approved proposals automatically trigger smart contract actions.  
+4. Governance decisions and outcomes are stored transparently on-chain.  
 
-6. Security and Privacy
+---
 
-TranspaGovChain employs a multi-layer security protocol:
+## 6. Security and Privacy
 
-End-to-end encryption (TLS + AES-256)
+TranspaGovChain employs a **multi-layered security model** that includes:
 
-Role-based access control (RBAC)
+- **End-to-End Encryption:** Protects data exchange between users and nodes.  
+- **Role-Based Access Control (RBAC):** Ensures proper authorization.  
+- **Decentralized Identity (DID):** Authenticates verified entities.  
+- **Zero-Knowledge Proofs (ZKPs):** Verifies sensitive data without revealing it.  
+- **Immutable Audit Trails:** Prevents tampering and ensures accountability.  
 
-Polkadot DID (Decentralized Identity) integration
+---
 
-Zero-Knowledge Proofs (ZKPs) for private financial validation
+## 7. Roadmap
 
-Immutable Audit Trails to prevent tampering
+### Development Phases
 
-7. Roadmap
-Phase	Timeline	Description
-Phase 1	Q4 2025	Concept development, Polkadot testnet integration, and UI prototype
-Phase 2	Q1 2026	Smart contract deployment for project registration and funding
-Phase 3	Q2 2026	Integration with government APIs and auditing agencies
-Phase 4	Q3 2026	Launch of citizen transparency dashboard and feedback system
-Phase 5	Q4 2026	Polkadot mainnet deployment, DAO launch, and token distribution
-Phase 6	2027+	Expansion to other governance sectors and international adoption
+| Phase | Timeline | Description |
+|-------|-----------|-------------|
+| **Phase 1** | Q4 2025 | Concept development, Polkadot testnet integration, and UI prototype |
+| **Phase 2** | Q1 2026 | Smart contract deployment for project registration and funding |
+| **Phase 3** | Q2 2026 | Integration with government APIs and auditing agencies |
+| **Phase 4** | Q3 2026 | Launch of citizen transparency dashboard and feedback system |
+| **Phase 5** | Q4 2026 | Polkadot mainnet deployment, DAO launch, and token distribution |
+| **Phase 6** | 2027+ | Expansion to other governance sectors and international adoption |
 
-gantt
-    dateFormat  YYYY-MM-DD
-    title TranspaGovChain Development Roadmap
-    section Foundation
-    Concept & UI Prototype :done, a1, 2025-10-01, 2025-12-31
-    section Smart Contracts
-    Contract Deployment & Testing :a2, 2026-01-01, 2026-03-31
-    section Integration
-    Government API Integration :a3, 2026-04-01, 2026-06-30
-    section Public Access
-    Citizen Dashboard Launch :a4, 2026-07-01, 2026-09-30
-    section Governance
-    Mainnet & DAO Deployment :a5, 2026-10-01, 2026-12-31
-    section Expansion
-    Multi-Sector Integration :a6, 2027-01-01, 2027-12-31
+### Summary
 
-8. Conclusion
+- **Foundation (2025):** Establish proof-of-concept and UI prototype.  
+- **Implementation (2026):** Deploy core smart contracts and integrate with government systems.  
+- **Public Access (2026 Q3):** Launch public dashboard and feedback tools.  
+- **Governance (2026 Q4):** Launch DAO and transition to on-chain governance.  
+- **Expansion (2027+):** Scale to additional sectors such as education, health, and infrastructure.  
 
-TranspaGovChain represents a paradigm shift in how public transparency and trust are built.
-By combining the immutability of blockchain, the interoperability of Polkadot, and the participation of citizens, it redefines public accountability.
+---
 
-Through TGC-powered governance and open data, we pave the way toward a transparent, corruption-resistant, and citizen-centric digital government.
+## 8. Conclusion
 
-9. License
+**TranspaGovChain** represents a breakthrough in transparent governance.  
+By combining blockchain technology, decentralized governance, and citizen engagement, it provides a **trustless**, **verifiable**, and **open system** for monitoring government projects.  
 
-This project is released under the MIT License.
-See the LICENSE
- file for details.
+Through **Polkadot interoperability** and **TGC-powered incentives**, the platform ensures that **public accountability becomes a standard, not an exception**.
 
-Contact
+---
 
-Project Name: TranspaGovChain
-Website: coming soon
-Blockchain Network: Polkadot
-Email: contact@transpagovchain.org
+## 9. License
 
-GitHub: https://github.com/transpagovchain
+This project is released under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
 
-TranspaGovChain — Transparency in Every Block.
+---
+
+## Contact
+
+**Project Name:** TranspaGovChain  
+**Website:** _coming soon_  
+**Blockchain Network:** Polkadot  
+**Email:** contact@transpagovchain.org  
+**GitHub:** [https://github.com/transpagovchain](https://github.com/transpagovchain)
+
+---
+
+**TranspaGovChain** — *Transparency in Every Block.*
