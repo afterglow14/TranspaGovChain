@@ -120,4 +120,20 @@ See the [LICENSE](./LICENSE) file for details.
 
 ---
 
+## 👥 Project Team
+
+Developed by the **TranspaGovChain Project Team** as part of the  
+*Blockchain for Governance and Transparency Initiative.*
+
+**Team Members:**
+- Jet C. Aquino 
+- Joseph Del Carmen 
+- Jerry D.V. Lucas 
+- Jonathan Alberto 
+
+**Institution:** Nueva Ecija University of Science and Technology 
+**Date:** November 2025  
+
+---
+
 ### TranspaGovChain — *Transparency in Every Block*
