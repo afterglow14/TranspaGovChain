@@ -170,9 +170,9 @@ See the [LICENSE](LICENSE) file for details.
 ## Contact
 
 **Project Name:** TranspaGovChain  
-**Website:** _coming soon_  
+**Website:** http://194.62.248.223/  
 **Blockchain Network:** Polkadot  
-**Email:** contact@transpagovchain.org  
+**Email:** contact@transpagovchain.org  (coming soon!)
 **GitHub:** [https://github.com/transpagovchain](https://github.com/transpagovchain)
 
 ---
