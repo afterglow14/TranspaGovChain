@@ -94,7 +94,7 @@ TranspaGovChain is developed by a dedicated team of blockchain innovators, civic
 We welcome **contributors**, **developers**, and **partners** who share our vision of transparent governance.
 
 📩 To collaborate:  
-**Email:** contact@transpagovchain.org  
+**Email:** contact@transpagovchain.org  (coming soon!)
 
 ---
 
@@ -115,9 +115,9 @@ See the [LICENSE](./LICENSE) file for details.
 ## 🌍 Connect With Us
 
 - **GitHub:** [https://github.com/transpagovchain](https://github.com/transpagovchain)  
-- **Website:** _coming soon_  
-- **Email:** contact@transpagovchain.org  
+- **Website:** http://194.62.248.223
+- **Email:** contact@transpagovchain.org  (coming soon!)
 
 ---
 
-### 🏛️ TranspaGovChain — *Transparency in Every Block*
+### TranspaGovChain — *Transparency in Every Block*
