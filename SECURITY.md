@@ -17,7 +17,7 @@ If you discover a security vulnerability within TranspaGovChain:
 
 1. **Do not open a public issue.**
 2. **Email the security team directly** at:  
-   **security@transpagovchain.org**
+   **security@transpagovchain.org** (coming soon!)
 3. Include:
    - A description of the issue.  
    - Steps to reproduce.  
@@ -51,4 +51,4 @@ All confirmed security issues and their resolutions will be **documented and pub
 ---
 
 **TranspaGovChain Security Team**  
-**security@transpagovchain.org**
+**security@transpagovchain.org (coming soon!)**
