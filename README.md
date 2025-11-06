@@ -127,9 +127,9 @@ Developed by the **TranspaGovChain Project Team** as part of the
 
 **Team Members:**
 - Jet C. Aquino 
-- Joseph Del Carmen 
+- Joseph R. Del Carmen 
 - Jerry D.V. Lucas 
-- Jonathan Alberto 
+- Jonathan G. Alberto 
 
 **Institution:** Nueva Ecija University of Science and Technology 
 **Date:** November 2025  
