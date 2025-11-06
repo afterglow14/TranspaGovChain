@@ -33,9 +33,9 @@ There are several ways you can contribute:
 Click the **“Fork”** button on the top-right corner of this page to create your own copy.
 
 ### 2. Clone your fork
-```bash
+
 git clone https://github.com/<your-username>/transpagovchain.git
-cd transpagovchain
+cd transpagovchain```
 
 ### 3. Create a new branch
 git checkout -b feature/your-feature-name
